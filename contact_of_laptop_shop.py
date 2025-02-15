@@ -34,7 +34,7 @@ print(height)
 
 scrollable_div = driver.find_element(By.CLASS_NAME, "m6QErb")  # Container class
 
-for _ in range(34):  # Adjust the range for more scrolling
+for _ in range(50):  # Adjust the range for more scrolling
     ActionChains(driver).move_to_element(scrollable_div).send_keys(Keys.PAGE_DOWN).perform()
     time.sleep(2)  # Wait for new results to load
 
